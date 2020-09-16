@@ -14,11 +14,11 @@ import java.util.List;
 @Component
 @FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT")
 public interface DeptClientService {
-    
-    @GetMapping("/dept/add")
+
+    @PostMapping("/dept/add")
     public boolean addDept(Dept dept);
     @GetMapping("/dept/get/{id}")
     public Dept queryDept(Long id);
-    @PostMapping("/dept/list")
+    @GetMapping("/dept/list")
     public List<Dept> queryAll();
 }

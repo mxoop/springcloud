@@ -19,7 +19,7 @@ public class DeptConsumerController {
 
 //    private static final String REST_URL_PREFIX = "http://localhost:8011";
 //    Ribbon    这里的地址应该是变量
-    private static final String REST_URL_PREFIX = "SPRINGCLOUD-PROVIDER-DEPT";
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @RequestMapping("consumer/dept/add")
     public boolean add(Dept dept){

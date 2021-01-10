@@ -13,7 +13,7 @@ import java.util.List;
  * Created by Rain on 2020/8/31.
  */
 @Component
-@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT")
+@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT",fallbackFactory = DeptClientServiceFallBackFactory.class)
 public interface DeptClientService {
 
     @PostMapping("/dept/add")
